@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <title>영화 API 이용 통합검색 사이트</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1><a href="/">영화 목록</a></h1>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="영화 제목을 검색하세요..." />
+            <button type="submit">검색</button>
+        </form>
+        <div class="filter-buttons">
+            <button class="btn active" data-category="popular">인기</button>
+            <button class="btn" data-category="top_rated">평점 높은 순</button>
+            <button class="btn" data-category="now_playing">현재 상영 중</button>
+            <button class="btn" id="show-liked-btn">찜 목록❤️</button>
+        </div>
+        <!-- 영화 목록이 여기에 표시될 겁니다 -->
+        <div id="movie-list"></div>
+        <button id="load-more-btn" style="display: none">더 보기</button>
+        <!-- 자바스크립트 파일 연결 -->
+        <script src="script.js"></script>
+    </body>
+</html>
